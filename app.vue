@@ -1,25 +1,9 @@
 <template>
-  <UContainer class="min-h-screen flex items-center">
-    <UCard
-      class="flex-1"
-      :ui="{
-        background: 'bg-gray-50 dark:bg-gray-800/50',
-        ring: 'ring-1 ring-gray-300 dark:ring-gray-700',
-        divide: 'divide-y divide-gray-300 dark:divide-gray-700',
-        header: { base: 'font-bold' },
-      }"
-    >
-      <template #header> Welcome to the playground! </template>
+  <h1 class="m-2 bg-chestnut-100 text-8xl font-bold text-chestnut">Text</h1>
+  <h1 class="text-primary m-2 bg-chestnut-100 text-8xl font-bold">Text</h1>
+  <h1 class="m-2 bg-chestnut-100 text-8xl font-bold text-chestnut-500">Text</h1>
 
-      <p class="text-gray-500 dark:text-gray-400">Try your components here!</p>
-    </UCard>
-  </UContainer>
+  <UIcon name="i-heroicons-magnifying-glass" class="m-2 text-6xl" />
+  <br />
+  <UButton icon="i-heroicons-truck" class="m-2" size="xl" variant="solid" />
 </template>
-
-<script setup></script>
-
-<style>
-body {
-  @apply antialiased font-sans text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-900;
-}
-</style>
